@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Elevate Your Health Information Technology: Guide</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="#" />
+	<meta name="keywords"  content="#" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/add-style.css"/>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/guide.js"></script>
+  </head>
+
+  <body onload="javascript:loadGuide();">
+    <nav class="navbar-fixed-top fixed-elevate">
+	  <div class="container-fluid goaway normal"><img src="img/elevate_trans.png" alt="Elevate Your Health Information Technology" class="img-responsive center-block"/>
+	    <div class="pull-right login-top">
+	      <a href="profile.html">[Profile]</a>
+	      <a href="help.html">[Need Help?]</a>
+	      <a href="login.html">[Logout]</a>
+	    </div>
+	  </div>
+	  <div class="container">
+        <div id="navbar">
+          <ul class="nav nav-justified nav-elevate">
+            <li class="off"><a href="index.html">Using HIT for Population Health</a></li>
+           <li class="on"><a href="login.html">Elevate Your HIT Interactive Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+            <p class="lead">Using EHR Functionality in <strong><span id="_ehr"></span></strong> That May Help Improve Population Health</p>
+			<p><strong>Good planning is important for population health.</strong></p>
+			<p>In the sections below, you will find information you can use to help: <strong>1.</strong> Identify your goals; <strong>2.</strong> Plan and implement your solutions; and, after you’ve put your action plan in place, <strong>3.</strong> Evaluate your progress.</p>
+		  </div>
+		</div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="steps">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default panel-step" id="step1">
+          <div class="panel-heading">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                  <h4 class="panel-title panel-step-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          		      <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> <span class="text-uppercase">Step 1:</span> Identify goals for EHR
+                    </a>
+                  </h4>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                  <div class="panel-body">
+	                <div class="row">
+                      <div class="col-md-4 col-md-push-8">
+                        <div class="box-border-yellow">
+	                      <p>All topics must have entries to complete this step.</p>
+	                      <p>Upon completion of this step, you will be able to <strong>DOWNLOAD</strong> a summary of the goals you identified for your reference.</p>
+	                      <p><strong>Your entries for Step 1 will be saved for your reference. You can return to this step and update your selections at any time.</strong></p>
+                        </div>
+                      </div>
+                      <div class="col-md-8 col-md-pull-4">
+                        <h3>Identify goals</h3>
+	                    <p>What EHR improvements would you like to make that may help you meet your goals? Here are some goals that you may want to consider based on capabilities in your EHR.</p>
+                        <div class="accordion accordion-inner" id="accordion2">
+
+                          <form>
+                            <div class="accordion-group" id="_accordion-group">
+
+
+
+                              <!--
+                              <div id="collapseInnerOne" class="accordion-body collapse in">
+                                <div class="accordion-inner">
+                                  <div class="step1-section">
+                                    <div class="padding-box">
+                                      <button type="button" class="pull-right btn btn-sm btn-purple" data-toggle="modal" data-target="#Modal1">
+                                        View<br/>example
+                                      </button>
+									  <h5>Evalate vaccination rates</h5>
+	   								  <h6>Radar Dashboard (Workbench Report and Clarity/Crystal Reports)</h6>
+       								  <ul>
+	   								    <li>Allow users to choose personal measures</li>
+	                                    <li>Set benchmarks to compare:
+	                                      <ul>
+	                                        <li>Progress within the practice</li>
+	                                        <li>Progress across health system or office</li>
+	                                      </ul>
+	                                    </li>
+	   								    <li>Assess Clinical Quality Measures (CQMs)</li>
+	   								    <li>Submit vaccination to a state registry</li>
+	   							      </ul>
+	   							    </div>
+	   							    <label class="radio-inline"><strong>Would you like to implement:</strong></label>
+	                                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Already Using</label>
+                                  </div>
+         	                      <hr/>
+						  	      <p class="text-center">Click here to save your choices before moving to the next section.</p>
+             					  <div class="row">
+             					    <div class="col-sm-6 col-sm-offset-3">
+             				 		  <input class="btn btn-sm btn-yellow btn-block" type="submit" value="save">
+			  					    </div>
+			  					  </div>
+			  					  <div class="white-gap-sm"></div>
+              					</div>
+            				  </div>
+            				  -->
+
+            				</div>
+				            <div class="row">
+						      <div class="col-md-10 col-md-offset-1">
+							    <input class="btn btn-lg btn-lt-gray btn-block" type="submit" value="Download Step 1 Goal Summary">
+							  </div>
+							</div>
+							<div class="white-gap"></div>
+					      </form>
+		  				</div>
+					  </div>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+          </div>
+	    </div>
+
+        <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="Modal1Label">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="Modal1Label">Evaluate vaccination rates</h5>
+              </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-5"><h3>Radar Dashboard</h3>
+	              <p><strong>Radar Dashboard</strong> enables a visualization of EHR data to make it easier for HCPs to understand progress toward quality goals.</p>
+	              <div class="pale-back"><div class="pale-box-no-border"><p>Dashboards provide an overview of performance and are helpful in tracking progress toward quality goals.</p></div>
+	            </div>
+	          </div>
+              <div class="col-md-7">
+                <h6>Example</h6>
+                <img src="img/modal1_example.jpg" class="img-responsive" alt="Example Name Here"/>
+              </div>
+            </div>
+	      </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--step 2 starts-->
+  <div class="panel panel-default panel-step" id="step2">
+    <div class="panel-heading">
+       <div class="container">
+      <div class="row">
+<div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+      <h4 class="panel-title panel-step-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          <span class="glyphicon glyphicon-triangle-right"></span>
+		  <span class="text-uppercase">Step 2:</span> Plan and implement your solutions
+        </a>
+      </h4>
+	  </div></div></div></div>
+    <div id="collapseTwo" class="panel-collapse collapse steps-collapse">
+       <div class="container">
+      <div class="row">
+<div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+      <div class="panel-body">
+       <div class="row">
+
+      <div class="col-md-4 col-md-push-8">
+      <div class="box-border-yellow">
+	  <p>Merck will not save any of the text entered in this Step 2. </p>
+	  <p>When you’re finished, click the <strong>DOWNLOAD</strong> button to save your plan and implement summary as a .pdf file to your desktop.</p>
+	  <p><strong>NOTE: your entries will not be saved once you leave this Step 2 section of the guide.</strong></p>
+     </div></div>
+
+      <div class="col-md-8 col-md-pull-4 non-accordian">
+	  <h3>Plan and implement Your solutions</h3>
+	  <p>Now that you have identified some actions to address your EHR goals, you may want to consider what tools you can use to measure your progress.</p>
+
+	   <h4>Identify Opportunities and Potential Barriers </h4>
+	  <hr/>
+<form>
+<!--question 1 start-->
+<div class="padding-box"><h6>How will implementing the EHR features help your organization?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="Implementing"></textarea></div>
+<!--question 1 end-->
+
+<!--question 2 start-->
+<div class="padding-box"><h6>What steps will contribute to the effective implementation of your goals?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="StepsContribute"></textarea></div>
+<!--question 2 end-->
+
+<!--question 3 start-->
+<div class="padding-box"><h6>What are the biggest barriers to achieving your goals?</h6>
+<p><em class="purple">You might consider workflow, care team, design, and/or organization structure & priorities.</em></p>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="BiggestBarriers"></textarea></div>
+<!--question 3 end-->
+
+<!--question 4 start-->
+<div class="padding-box"><h6>How do these barriers vary by location, specialty, or patient group?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="BarriersVary"></textarea></div>
+<!--question 4 end-->
+
+<!--question 5 start-->
+<div class="padding-box"><h6>How will you address these barriers?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="BarriersAddress"></textarea></div>
+<!--question 5 end-->
+
+ <h4>Develop your action plan</h4>
+	  <hr/>
+<!--question 6 start-->
+<div class="padding-box"><h6>Who will be part of the core implementation team and what role will each person play?</h6>
+<p><em class="purple">You might consider organization or department goal and priority alignment, socialization, testing, training, resource allocation, and assessment plans.</em></p>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="WhoImplementing"></textarea></div>
+<!--question 6 end-->
+
+<!--question 7 start-->
+<div class="padding-box"><h6>What resources do you need to allocate to complete the action steps?</h6></div>
+<div class="form-group"><textarea class="form-control" rows="5" id="ResourcesAllocate"></textarea></div>
+<!--question 7 end-->
+
+<!--question 8 start-->
+<div class="padding-box"><h6>What are the milestones and tasks necessary to complete your goals?</h6></div>
+<div class="form-group"><textarea class="form-control" rows="5" id="Milestones"></textarea></div>
+<!--question 8 end-->
+
+<!--question 9 start-->
+<div class="padding-box"><h6>What data do you need to collect to measure success or to determine that your goals were met?</h6></div>
+<div class="form-group"><textarea class="form-control" rows="5" id="DataCollect"></textarea></div>
+<!--question 9 end-->
+
+<!--question 10 start-->
+<div class="padding-box"><h6>What does the implementation timeline look like?</h6></div>
+<div class="form-group"><textarea class="form-control" rows="5" id="Timeline"></textarea></div>
+<!--question 10 end-->
+
+<input class="btn btn-lg btn-yellow" type="submit" value="Download Step 2 Plan and Implement Summary">
+  </form>
+
+
+	  </div></div>
+
+
+		</div></div></div></div>
+    </div>
+  </div>
+ <!--step 2 ends-->
+ <!--step 3 starts-->
+  <div class="panel panel-default panel-step" id="step3">
+    <div class="panel-heading">
+       <div class="container">
+      <div class="row">
+<div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+      <h4 class="panel-title panel-step-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          <span class="glyphicon glyphicon-triangle-right"></span>
+		  <span class="text-uppercase">Step 3:</span> Measure and evaluate progress
+        </a>
+      </h4>
+	  </div></div></div>
+	  </div>
+    <div id="collapseThree" class="panel-collapse collapse steps-collapse">
+      <div class="panel-under-heading">
+       <div class="container">
+      <div class="row">
+<div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+  <ul><li>After you’ve implemented your solutions, it’s time to assess your progress. </li>
+	  <li>This step is intended to be completed in a separate session, after you’ve implemented your action plan. </li>
+	  <li>Your answers will not be saved here, but you can download your summaries from Step 1 and 2 to your personal desktop for later reference.</li></ul>
+	  </div>
+
+        </div></div></div>
+         <div class="container">
+      <div class="row">
+<div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+
+     <!--start step 3 form-->
+<form>
+
+      <div class="panel-body">
+      <div class="row">
+
+      <div class="col-md-4 col-md-push-8">
+      <div class="box-border-yellow">
+	  <p>Merck will not save any of the text entered in this Step 3.</p>
+	  <p>When you’re finished, click the <strong>DOWNLOAD</strong> button to save your evaluation summary as a .pdf file to your desktop.</p>
+	  <p><strong>NOTE: your entries will not be saved once you leave this Step 3 section of the guide.</strong></p>
+     </div></div>
+
+      <div class="col-md-8 col-md-pull-4 non-accordian">
+	  <h3>Measure and Evaluate Progress</h3>
+	  <p>Now that you have identified some actions to address your EHR goals, you may want to consider what tools you can use to measure your progress.</p>
+
+	  <h4>Compare</h4>
+	  <hr/>
+	  <div class="padding-box">
+ <p>Identify baseline rates for preventive services, such as vaccination, within the individual practice. Compare these rates to benchmark rates, on a local, regional, state, or national level. As a starting point for comparison, look to the Healthy People 2020 goals and CDC data and statistics. </p>
+	  </div>
+
+	   <h4>Measure Progress of EHR Improvements</h4>
+	  <hr/>
+	  <div class="padding-box">
+	  <!-- Button trigger modal -->
+<button type="button" class="pull-right btn btn-sm btn-purple" data-toggle="modal" data-target="#ModalStep3">
+View<br/>example
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="ModalStep3" tabindex="-1" role="dialog" aria-labelledby="ModalStep3Label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h5 class="modal-title" id="ModalStep3Label">Modal Step 3 title</h5>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+
+    </div>
+  </div>
+</div>
+
+	  <h5>Assess</h5>
+	  <p>The practice or Integrated Delivery System (IDS) can establish Clinical Quality Measures (CQMs), called <strong>Meaningful Use Quality Measures</strong> in Epic, to set and assess performance against quality goals.</p>
+	  <ul><li><strong>Quality Dashboards</strong> are used to view the entire patient population</li>
+	  <li><strong>Snapshot</strong> is used to view an individual patient</li>
+<li>IDSs are able to add new CQMs or to modify the existing CQMs</li>
+<li>IDSs may have an approval process to establish and modify the CQMs</li>
+</ul>
+<p>By reviewing measures over time, practices can evaluate the effectiveness of their quality improvement activities like improving patient education, use of reminders to reduce gaps in vaccinations, or recalling patients for additional treatments.</p>
+<p>CQMs reporting can be used as a Patient List to bring patients back into the practice to help close gaps in care.</p>
+
+	  </div>
+	   <h4>Evaluate Your Practice's Progress</h4>
+	  <hr/>
+
+
+<!--question 1 start-->
+<div class="padding-box"><h6>What are our baseline vaccination rates?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="Baseline"></textarea></div>
+<!--question 1 end-->
+
+<!--question 2 start-->
+<div class="padding-box"><h6>What are the national, state, and local vaccination rates? How do we benchmark against them?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="Benchmark"></textarea></div>
+<!--question 2 end-->
+
+ <!--question 3 start-->
+<div class="padding-box"><h6>How successful were we in meeting the goals we set?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="Successful"></textarea></div>
+<!--question 3 end-->
+
+ <!--question 4 start-->
+<div class="padding-box"><h6>How have our vaccination rates changed?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="4" id="Rates"></textarea></div>
+<!--question 4 end-->
+
+ <!--question 5 start-->
+<div class="padding-box"><h6>Is there still work to be completed?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="Completed"></textarea></div>
+<!--question 5 end-->
+
+ <!--question 6 start-->
+<div class="padding-box"><h6>Is additional training required?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="Training"></textarea></div>
+<!--question 6 end-->
+
+ <!--question 7 start-->
+<div class="padding-box"><h6>Are we collecting the right data to help us determine if we’re meeting our EHR goals?</h6>	</div>
+<div class="form-group"><textarea class="form-control" rows="5" id="Goals"></textarea></div>
+<!--question 7 end-->
+
+
+
+	  </div>
+
+	</div>
+
+   </div>
+
+   <p class="lead purple">A <strong class="text-uppercase">complete HIT strategy</strong> may help you <strong class="text-uppercase">close care gaps</strong> and <strong class="text-uppercase">meet your population health goals</strong>. Make sure your HIT is ready to meet the growing needs of your population.</p>
+
+<input class="btn btn-lg btn-yellow" type="submit" value="Download Step 3 Evaluation Summary">
+<div class="white-gap"></div>
+  </form>
+<!--end step 3 form-->
+
+   </div>
+
+
+   </div>
+   </div>
+    </div>
+  </div>
+<!--step 3 ends-->
+</div>
+</div>
+
+<!--accordian closes-->
+
+
+
+
+
+<div class="container">
+<div class="row">
+<div class="white-gap-sm"></div>
+<div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+<small>*Brands mentioned are trademarks of their respective owners.<br/>
+EHR=Electronic Health Record</small>
+</div>
+</div></div><!-- #BeginLibraryItem "/Library/footer.lbi" --><div class="container footer footer-top">
+<div class="pull-left"><img src="img/merck-logo_black.png" alt="Merck logo"/><small>Provided as an educational resource by Merck</small></div>
+</div>
+<div class="container footer footer-other">
+<p><small><a href="http://www.merck.com/policy/terms-of-use/home.html" target="_blank">Privacy Policy</a> | <a href="http://www.merck.com/about/how-we-operate/privacy/internet-privacy-policy.html" target="_blank">Terms of Use</a> | Copyright &copy; 2017 Merck Sharp &amp; Dohme Corp., a subsidiary of <strong>Merck &amp; Co., Inc.</strong> All rights reserved. VACC-1193178-0000 05/17</small></p>
+<a href="http://privacy.truste.com/privacy-seal/validation?rid=343d5d70-40be-4ab1-8853-82bfbd0fe8f2" target="_blank"/><img src="img/TRUSTe-CP.png" width="120" height="40" alt="TRUSTe Certified Privacy"/> <a href="http://privacy.truste.com/privacy-seal/validation?rid=0a0fd821-0cd2-443b-99ea-9e96f2ccbee9" target="_blank"><img src="img/TRUSTe-APEC.png" width="120" height="40" alt="TRUSTe APEC Privacy"/></a><!-- button -->
+</div><!-- #EndLibraryItem --><!--<script type="text/javascript">
+     var popit = true;
+     window.onbeforeunload = function() {
+          if(popit == true) {
+               popit = false;
+               return "You are about to leave this page. The information you entered will not be saved.";
+          }
+     }
+</script>-->
+
+</body>
+</html>

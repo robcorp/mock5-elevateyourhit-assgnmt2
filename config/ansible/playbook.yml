@@ -1,0 +1,11 @@
+---
+# This playbook installs and configures apache2 and tomcat7
+
+- hosts: all
+  #remote_user: root
+  become: yes
+  #become_method: sudo
+
+  roles:
+    - apache2
+    #- tomcat7

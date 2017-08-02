@@ -1,0 +1,18 @@
+---
+# These tasks install Tomcat 7 and the Tomcat Admin apps
+
+- name: Install Tomcat 7
+  apt: name="tomcat7" state=present
+
+- name: Install Tomcat Admin app
+  apt: name=tomcat7-admin state=present
+
+- name: Configure Tomcat users
+  template: src=tomcat-users.xml dest=/etc/tomcat7/
+  notify: restart tomcat
+
+- name: Start Tomcat
+  service: name=tomcat7 state=started enabled=yes
+
+- name: wait for tomcat to start
+  wait_for: port={{http_port}}

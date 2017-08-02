@@ -1,0 +1,65 @@
+Hi Rob… [I will send the code Thurs. morning as the email attachment is getting rejected]…
+
+Assignment:
+Include jQuery validation to the login.html | registration.html and profile.html forms.
+
+Files:
+login.html
+registration.html
+profile.html
+readme.txt [this includes the libraries]
+
+1. Place the jQuery validation code into a separate .js file for each html file [loginValidation.js | registrationValidation.js and profileValidation.js].
+2. I included in /js a qrpRegistrationValidation.js file from another project. It should help with expediting the coding [the password rules should carry over].
+3. For fields that fail validation highlight border red.
+4. For the password… each validation should check the checkbox in the corresponding rule on the right side of the page that meets that rule.
+5. Include a <div> before the first textbox on each page. This is to show potential error messages [ie: Invalid username or password.] when the web service is called.
+
+Login Rules:
++ L	2		H	Username is required.
++ L	2.1		H	Username is the email address of the external user.
++ L	2.2		H	Email format is local-part@domain
++ L	2.3		H	Email cannot exceed 254 characters.
++ L	2.4		H	Email cannot be blank.
++ L	3		H	Password is required.
++ L	3.1		H	Password must be a minimum of 8 characters.
++ L	3.2		H	Password must be a maximum of 16 characters.
++ L	3.3		H	Password must be masked. 
+? L	3.3.1		H	Password mask is browser controlled.
++ L	3.4		H	Password must contain at least one upper case letter.
++ L	3.5		H	Password must contain at least one lower case letter.
++ L	3.6		H	Password must contain at least one number.
++ L	3.7		H	Password must contain at least one special character of set @!#$%^&*?_/ 
+
+Registration and Profile Rules:
++ P	3		H	Username is required.
++ P	3.2		H	Email format is local-part@domain
++ P	3.3		H	Email cannot exceed 254 characters.
++ P	3.4		H	Email cannot be blank.
++ P	3.5		H	If profile update the email field is shaded and not editable.
++ P	4		H	Password is required.
++ P	4.1		H	Password must be a minimum of 8 characters.
++ P	4.2		H	Password must be a maximum of 16 characters.
++ P	4.3		H	Password must be masked. 
+? P	4.3.1		H	Password mask is browser controlled.
++ P	4.4		H	Password must contain at least one upper case letter.
++ P	4.5		H	Password must contain at least one lower case letter.
++ P	4.6		H	Password must contain at least one number.
++ P	4.7		H	Password must contain at least one special character of set @!#$%^&*?_/ 
++ P	5		H	Password confirmation must match the password field.
+? P	6		H	Professional title is required.  ??? Form shows optional ???
++ P	6.1		H	Professional title must be a minimum of 1 character.
++ P	6.2		H	Professional title must be a maximum of 64 characters.
++ P	8		H	First name is required.
++ P	8.1		H	First name must be a minimum of 1 character.
++ P	8.2		H	First name must be a maximum of 64 characters.
++ P	8.3		H	Last name is required.
++ P	8.4		H	Last name must be a minimum of 1 character.
++ P	8.5		H	Last name must be a maximum of 64 characters.
++ P	9		H	Company name is required.
++ P	9.1		H	Company name must be a minimum 1 character.
++ P	9.2		H	Company name must be a maximum 64 characters.
++ P	10		H	Security question is required.
++ P	10.2		H	Security answer is required.
++ P	10.3		H	Security question answer must be a minimum of 4 characters.
++ P	10.4		H	Security question answer must be a maximum of 64 characters. 

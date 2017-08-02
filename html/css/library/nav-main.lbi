@@ -1,0 +1,9 @@
+   <div class="container">
+        <div id="navbar">
+          <ul class="nav nav-justified nav-elevate">
+            <li class="off"><a href="../index.html">Making HIT Work for Population Health</a></li>
+           <li class="on"><a href="../login.html">Elevate Your HIT Interactive Guide</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+      

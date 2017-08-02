@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Elevate Your Health Information Technology: Welcome to the Guide</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="#" />
+	<meta name="keywords"  content="#" />
+	<meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/add-style.css"/>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/registration.js"></script>
+  </head>
+
+  <body onload="populate_ehr()">
+    <nav class="navbar-fixed-top fixed-elevate">
+	  <div class="container-fluid goaway normal">
+	    <img src="img/elevate_trans.png" alt="Elevate Your Health Information Technology" class="img-responsive center-block"/>
+	    <div class="pull-right login-top">
+	      <a href="profile.html">[Profile]</a>
+	      <a href="help.html">[Need Help?]</a>
+	      <a href="login.html">[Logout]</a>
+	    </div>
+	  </div>
+	  <div class="container">
+        <div id="navbar">
+          <ul class="nav nav-justified nav-elevate">
+            <li class="off"><a href="index.html">Using HIT for Population Health</a></li>
+            <li class="on"><a href="login.html">Elevate Your HIT Interactive Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 ">
+            <p class="lead">
+              <small>Welcome to the
+                <strong class="text-uppercase">Elevate your hit Interactive Guide</strong>
+              </small>
+            </p>
+            <p class="lead">
+              This guide can help walk you through
+              <strong class="text-uppercase">3 steps</strong> to develop an
+              <strong class="text-uppercase">Action Plan</strong> for implementing possible
+              <strong class="text-uppercase">EHR system changes</strong> to help
+              <strong class="text-uppercase">support your population health goals</strong>.
+            </p>
+            <div class="row">
+              <div class="col-sm-6 col-sm-push-6">
+                <div class="white-gap-sm"></div>
+                  <div id="_ehrinfo" class="pale-back pale-box-less pale-box-gap" style="display:none;">
+                    <p><strong>Important Information</strong></p>
+                    <ul>
+                      <li>This interactive guide has not been reviewed or endorsed by <span id="_ehr1">Epic</span>. You are solely responsible
+                          for implementation, testing, and monitoring to ensure proper orientation in the EHR system. Merck
+                          does not take responsibility to revise this interactive guide if the software changes. Nor
+                          does Merck represent or warrant that your use of this guide will help you achieve your population
+                          health goals.
+                      </li>
+                      <li>The functionality described in this guide may not apply to all available versions of <span id="_ehr2">Epic</span> or
+                          customizations undertaken, and capabilities may vary based on each individual EHR system.
+                      </li>
+                      <li>While EHRs may assist providers in identifying appropriate patients for vaccination, the decision
+                          regarding whom to vaccinate should ultimately be decided by a provider in consultation with a
+                          patient, after a review of the patient’s records.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-sm-pull-6">
+                  <div class="white-gap choose">
+                    <h3>Select Your EHR:</h3>
+                    <p>You can activate additional EHRs in your profile.</p>
+
+				    <form>
+				      <div class="form-group">
+                        <select class="form-control" id="_ehrs" onchange="javascript:changeEHR();">
+  						</select>
+     					<span class="helper-text yellow-text">Required</span>
+  					  </div>
+					</form>
+
+                    <div class="row">
+				      <div class="col-md-8 col-md-offset-2">
+					    <input class="btn btn-yellow btn-block" type="button" value="Continue" onclick="window.location.href = 'guide.html';">
+					  </div>
+					</div>
+				  </div>
+                  <div class="white-gap-sm"></div>
+                </div>
+              </div>
+
+              <div class="white-gap"></div>
+              <small>*Brands mentioned are trademarks of their respective owners.<br/>
+              EHR=Electronic Health Record</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer footer-top">
+        <div class="pull-left">
+          <img src="img/merck-logo_black.png" alt="Merck logo"/>
+          <small>Provided as an educational resource by Merck</small>
+        </div>
+      </div>
+      <div class="container footer footer-other">
+        <p>
+          <small>
+            <a href="http://www.merck.com/policy/terms-of-use/home.html" target="_blank">Privacy Policy</a> |
+            <a href="http://www.merck.com/about/how-we-operate/privacy/internet-privacy-policy.html" target="_blank">Terms of Use</a> | Copyright &copy; 2017 Merck Sharp &amp; Dohme Corp., a subsidiary of <strong>Merck &amp; Co., Inc.</strong> All rights reserved. VACC-1193178-0000 05/17
+          </small>
+        </p>
+        <a href="http://privacy.truste.com/privacy-seal/validation?rid=343d5d70-40be-4ab1-8853-82bfbd0fe8f2" target="_blank"/><img src="img/TRUSTe-CP.png" width="120" height="40" alt="TRUSTe Certified Privacy"/>
+        <a href="http://privacy.truste.com/privacy-seal/validation?rid=0a0fd821-0cd2-443b-99ea-9e96f2ccbee9" target="_blank"><img src="img/TRUSTe-APEC.png" width="120" height="40" alt="TRUSTe APEC Privacy"/></a>
+      </div>
+    </div>
+  </body>
+</html>
