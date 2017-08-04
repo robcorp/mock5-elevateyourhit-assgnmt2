@@ -7,14 +7,14 @@
    - apache2
    - lynx
 
-- name: Enable proxy, proxy_http, proxy_balancer and lbmethod_byrequests apache modules.
-  apache2_module: name={{ item }} state=present
-  with_items:
-    - proxy
-    - proxy_http
-    - proxy_balancer
-    - lbmethod_byrequests
-  notify: restart apache2
+#- name: Enable proxy, proxy_http, proxy_balancer and lbmethod_byrequests apache modules.
+#  apache2_module: name={{ item }} state=present
+#  with_items:
+#    - proxy
+#    - proxy_http
+#    - proxy_balancer
+#    - lbmethod_byrequests
+#  notify: restart apache2
 
 - name: Ensure httpd service is running and will run after reboot
   service: name=apache2 state=started enabled=yes

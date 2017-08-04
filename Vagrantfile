@@ -12,13 +12,15 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  # config.vm.box = "ubuntu/xenial64"
+  #config.vm.box = "minimal/trusty64" # Doesn't work with VB 5.1.26
+  #config.vm.box = "bento/ubuntu-16.04"
+  #config.vm.box = "ubuntu/xenial64"
   config.vm.box = "envimation/ubuntu-xenial"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
-  #config.vm.box_check_update = false
+  config.vm.box_check_update = true
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
